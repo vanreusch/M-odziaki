@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Młodziaki - Domowe Laboratorium Eksperymentów</title>
+    <style>
+        :root {
+            --primary: #4F46E5;
+            --primary-dark: #4338CA;
+            --accent: #F59E0B;
+            --bg: #F9FAFB;
+            --text: #1F2937;
+            --gray: #6B7280;
+        }
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        body {
+            background-color: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+        }
+        header {
+            background: linear-gradient(135deg, #4F46E5 0%, #7C3AED 100%);
+            color: white;
+            padding: 4rem 1rem;
+            text-align: center;
+        }
+        header h1 {
+            font-size: 2.8rem;
+            margin-bottom: 1rem;
+        }
+        header p {
+            font-size: 1.25rem;
+            max-width: 600px;
+            margin: 0 auto 2rem auto;
+            opacity: 0.9;
+        }
+        .cta-button {
+            background-color: var(--accent);
+            color: white;
+            padding: 1rem 2.5rem;
+            font-size: 1.15rem;
+            font-weight: bold;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+            box-shadow: 0 4px 14px rgba(245, 158, 11, 0.4);
+            transition: transform 0.2s, background-color 0.2s;
+        }
+        .cta-button:hover {
+            background-color: #D97706;
+            transform: translateY(-2px);
+        }
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 4rem 1rem;
+        }
+        .section-title {
+            text-align: center;
+            font-size: 2rem;
+            margin-bottom: 3rem;
+            color: var(--text);
+        }
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin-bottom: 4rem;
+        }
+        .feature-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            text-align: center;
+        }
+        .feature-card h3 {
+            margin-bottom: 1rem;
+            color: var(--primary);
+        }
+        .pricing {
+            background: white;
+            border: 2px solid var(--primary);
+            border-radius: 16px;
+            padding: 3rem;
+            text-align: center;
+            max-width: 600px;
+            margin: 0 auto;
+            box-shadow: 0 10px 25px rgba(79, 70, 229, 0.1);
+        }
+        .pricing h2 {
+            margin-bottom: 1rem;
+            color: var(--primary);
+        }
+        .price {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: var(--text);
+            margin: 1.5rem 0;
+        }
+        .price span {
+            font-size: 1rem;
+            color: var(--gray);
+            font-weight: normal;
+        }
+        footer {
+            text-align: center;
+            padding: 2rem;
+            background: #111827;
+            color: #9CA3AF;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Młodziaki</h1>
+        <p>Zamień dom w bezpieczne laboratorium i oderwij dziecko od ekranu dzięki pasjonującym misjom z produktów z kuchennej szafki.</p>
+        <!-- TUTAJ WKLEJISZ LINK DO STRIPE PAYMENT LINK -->
+        <a href="https://buy.stripe.com/twoj_link_plnosci" class="cta-button">Wypróbuj 7 dni za darmo</a>
+    </header>
+
+    <div class="container">
+        <h2 class="section-title">Dlaczego rodzice kochają Młodziaki?</h2>
+        <div class="features">
+            <div class="feature-card">
+                <h3>🚫 Zero ekranów</h3>
+                <p>Prawdziwe eksperymenty manualne, dotykanie, mieszanie i fascynujące reakcje fizyczno-chemiczne na żywo.</p>
+            </div>
+            <div class="feature-card">
+                <h3>⏱️ Gotowe w 5 minut</h3>
+                <p>Używasz wyłącznie tego, co masz już w kuchni: sody, octu, barwników, oleju czy balonów. Zero szukania w sklepach.</p>
+            </div>
+            <div class="feature-card">
+                <h3>🕵️ Fabularne Misje</h3>
+                <p>Każdy eksperyment to część wciągającej historii z zagadką do rozwiązania. Dziecko staje się Agentem Naukowym!</p>
+            </div>
+        </div>
+
+        <div class="pricing">
+            <h2>Zacznij przygodę bez ryzyka</h2>
+            <p>Uzyskaj natychmiastowy dostęp do wszystkich interaktywnych misji w naszej platformie.</p>
+            <div class="price">0 zł <span>/ pierwsze 7 dni</span></div>
+            <p style="color: var(--gray); margin-bottom: 2rem;">Potem tylko 49 zł / miesiąc. Anuluj w dowolnym momencie jednym kliknięciem.</p>
+            <!-- TUTAJ TEŻ WKLEJISZ LINK DO STRIPE -->
+            <a href="https://buy.stripe.com/twoj_link_plnosci" class="cta-button">Rozpocznij darmowy okres</a>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Młodziaki. Wszelkie prawa zastrzeżone.</p>
+    </footer>
+
+</body>
+</html>
